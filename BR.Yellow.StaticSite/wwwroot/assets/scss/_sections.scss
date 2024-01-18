@@ -468,7 +468,11 @@ section {
     img {
       transition: all ease-in-out 0.3s;
     }
-
+    img.logo{
+        max-height: 55px;
+        width: auto;
+        margin-left: 1rem;
+    }
     
     .portfolio-info {
       opacity: 0;
