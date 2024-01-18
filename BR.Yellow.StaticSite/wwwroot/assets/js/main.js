@@ -18,7 +18,9 @@
     } else {
       return document.querySelector(el)
     }
-  }
+    }
+
+  
 
   /**
    * Easy event listener function
@@ -33,7 +35,7 @@
       }
     }
   }
-
+   
   /**
    * Easy on scroll event listener 
    */
@@ -166,14 +168,14 @@
   /**
    * Hero carousel indicators
    */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+  //let heroCarouselIndicators = select("#hero-carousel-indicators")
+  //let heroCarouselItems = select('#heroCarousel .carousel-item', true)
 
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
+  //heroCarouselItems.forEach((item, index) => {
+  //  (index === 0) ?
+  //  heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+  //    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+  //});
 
   /**
    * Clients Slider

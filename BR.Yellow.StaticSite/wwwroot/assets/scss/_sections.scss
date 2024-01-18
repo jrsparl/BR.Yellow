@@ -6,7 +6,7 @@ section {
 }
 
 .section-bg {
-  background-color: lighten($primary, 44);
+    background-color: lighten($yellow, 40);
 }
 
 .section-title {
@@ -55,44 +55,45 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services {
-  padding: 20px 0;
-  .icon-box {
-    padding: 20px;
-  }
+    padding: 20px 0;
 
-  .icon-box-bg {
-    background-image: linear-gradient(0deg,  $secondary 0%, lighten($secondary, 5) 50%,  $secondary 100%);
-  }
-
-  .icon {
-    margin-bottom: 15px;
-
-    i {
-      color: $primary;
-      font-size: 42px;
+    .icon-box {
+        padding: 20px;
+        text-align: center;
     }
 
-  }
-
-  .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-    a {
-      color: $secondary;
-      transition: 0.3s;
+    .icon-box-bg {
+        background-image: linear-gradient(0deg, $secondary 0%, lighten($secondary, 5) 50%, $secondary 100%);
     }
 
-  }
+    .icon {
+        margin-bottom: 15px;
 
-  .icon-box:hover .title  a {
-    color: $primary;
-  }
+        i {
+            color: $primary;
+            font-size: 42px;
+        }
+    }
 
-  .description {
-    line-height: 24px;
-    font-size: 14px;
-  }
+    .title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+
+        a {
+            color: $secondary;
+            transition: 0.3s;
+        }
+    }
+
+    .icon-box:hover .title a {
+        color: $primary;
+    }
+
+    .description {
+        line-height: 24px;
+        font-size: 14px;
+    }
 }
 
 /*--------------------------------------------------------------

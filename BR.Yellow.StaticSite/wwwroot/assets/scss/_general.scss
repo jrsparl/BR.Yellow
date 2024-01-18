@@ -20,36 +20,82 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
 }
 
+
+
+#hero img.text-image {
+    max-height: 75px !important;
+    width: auto !important;
+   margin: 0 6px;
+    transform: translateY(-7px);
+}
+
+
+
+#hero .carousel-item .container h2 {
+    vertical-align: text-bottom;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
+.go-to-about {
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-20px);
+    position: fixed;
+    z-index: 996;
+    background-color: rgba(242,183,5,0.10);
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+
+
+    i {
+        font-size: 24px;
+        color: rgba(255,255,255,.6) !important;
+        line-height: 0;
+    }
+
+    &:hover {
+        background: lighten($teal, 8);
+        color: #fff;
+    }
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right:15px;
-  bottom: 15px;
-  z-index: 996;
-  background: $primary;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $primary;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
 
-  i {
-    font-size: 24px;
-    color: #fff;
-    line-height: 0;
-  }
+    i {
+        font-size: 24px;
+        color: #fff;
+        line-height: 0;
+    }
 
-  &:hover  {
-    background: lighten($primary, 8);
-    color: #fff;
-  }
+    &:hover {
+        background: lighten($primary, 8);
+        color: #fff;
+    }
 
-  &.active {
-    visibility: visible;
-    opacity: 1;
-  }
-
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
 }
