@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\assets\img\portfolio\**" />
+    <Content Remove="wwwroot\assets\img\portfolio\**" />
+    <EmbeddedResource Remove="wwwroot\assets\img\portfolio\**" />
+    <None Remove="wwwroot\assets\img\portfolio\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
@@ -16,10 +23,6 @@
 
   <ItemGroup>
     <None Include="compilerconfig.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\assets\img\portfolio\" />
   </ItemGroup>
 
 </Project>
