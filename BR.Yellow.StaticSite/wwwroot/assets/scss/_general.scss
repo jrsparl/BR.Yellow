@@ -25,14 +25,17 @@ h1, h2, h3, h4, h5, h6 {
 #hero img.text-image {
     max-height: 75px !important;
     width: auto !important;
-   margin: 0 6px;
-    transform: translateY(-7px);
+    margin: 0 .75rem;
+   
 }
 
 
 
 #hero .carousel-item .container h2 {
-    vertical-align: text-bottom;
+    vertical-align: text-bottom !important;
+    align-content: baseline;
+    flex-wrap: wrap;
+    transform: translateY(4px);
 }
 /*--------------------------------------------------------------
 # Back to top button
