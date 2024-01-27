@@ -20,6 +20,27 @@
         bottom: 0;
     }
 
+
+    h2 span.brand-text {
+        color: $yellow;
+        margin-left: .7rem;
+        margin-right: .7rem;
+    }
+
+    h1 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-weight: 700;
+        word-wrap: normal;
+    }
+
+    h1 span.brand-text {
+        color: $yellow;
+        margin-left: .7rem;
+        margin-right: .7rem;
+    }
+
     .carousel-item::before {
         content: '';
         background-color: rgba(darken($primary, 25), 0.7);
@@ -45,8 +66,6 @@
         margin-bottom: 10px;
         font-size: 48px;
         font-weight: 700;
-        vertical-align: bottom;
-        display: inline-flex;
     }
 
     h5 {
@@ -148,10 +167,16 @@
             top: 66px;
         }
     }
-
-    @media (max-width: 768px) {
+     @media (max-width: 768px) {
         h2 {
-            font-size: 28px;
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 600px) { /* Adjust max-width as needed */
+       
+
+        .brand-text {
+            display: block; /* Makes 'Yellowfin ' start on a new line */
         }
     }
 

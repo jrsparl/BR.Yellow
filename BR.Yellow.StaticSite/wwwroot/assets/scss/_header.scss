@@ -2,45 +2,52 @@
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: lighten($secondary, 85);
-  font-size: 15px;
-  height: 40px;
-  padding: 0;
+    background: lighten($secondary, 85);
+    font-size: 15px;
+    height: 40px;
+    padding: 0;
 
-  .contact-info {
-    a {
-      line-height: 0;
-      color: $default;
-      transition: 0.3s;
-      &:hover {
-        color: $primary;
-      }
+    .contact-info {
+        a {
+            line-height: 0;
+            color: $default;
+            transition: 0.3s;
+            min-width: 120px;
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        i {
+            color: $primary;
+            line-height: 0;
+            margin-right: 5px;
+        }
+
+        .phone-icon {
+            margin-left: 15px;
+        }
     }
 
-    i {
-      color: $primary;
-      line-height: 0;
-      margin-right: 5px;
-    }
-    .phone-icon {
-      margin-left: 15px;
-    }
-  }
+    .social-links {
+        a {
+            color: lighten($secondary, 30);
+            padding: 4px 12px;
+            display: inline-block;
+            line-height: 1px;
+            transition: 0.3s;
 
-  .social-links {
-    a {
-      color: lighten($secondary, 30);
-      padding: 4px 12px;
-      display: inline-block;
-      line-height: 1px;
-      transition: 0.3s;
-      &:hover {
-        color: $primary;
-      }
+            &:hover {
+                color: $primary;
+            }
+        }
     }
-  }
 }
-
+@media screen and (max-width: 550px) { /* Adjust breakpoint as needed */
+    a {
+        font-size: 10px; /* Adjust this value as per your design */
+    }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

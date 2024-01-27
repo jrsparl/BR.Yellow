@@ -20,19 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
-#hero img.text-image {
-  max-height: 75px !important;
-  width: auto !important;
-  margin: 0 0.75rem;
-}
-
-#hero .carousel-item .container h2 {
-  vertical-align: text-bottom !important;
-  align-content: baseline;
-  flex-wrap: wrap;
-  transform: translateY(4px);
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -103,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   color: #444444;
   transition: 0.3s;
+  min-width: 120px;
 }
 #topbar .contact-info a:hover {
   color: #1B578C;
@@ -126,6 +114,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #1B578C;
 }
 
+@media screen and (max-width: 550px) { /* Adjust breakpoint as needed */
+  a {
+    font-size: 10px; /* Adjust this value as per your design */
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -369,6 +362,23 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   bottom: 0;
 }
+#hero h2 span.brand-text {
+  color: #F2B705;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+#hero h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  word-wrap: normal;
+}
+#hero h1 span.brand-text {
+  color: #F2B705;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
 #hero .carousel-item::before {
   content: "";
   background-color: rgba(6, 21, 33, 0.7);
@@ -391,8 +401,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-size: 48px;
   font-weight: 700;
-  vertical-align: bottom;
-  display: inline-flex;
 }
 #hero h5 {
   color: #fff;
@@ -482,7 +490,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #hero { /* Adjust max-width as needed */ }
+  #hero .brand-text {
+    display: block; /* Makes 'Yellowfin ' start on a new line */
   }
 }
 @media (min-width: 1024px) {
@@ -518,26 +532,6 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-}
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #1B578C;
-  bottom: 0;
-  left: calc(50% - 20px);
 }
 .section-title p {
   margin-bottom: 0;
