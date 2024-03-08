@@ -160,6 +160,25 @@
         }
     }
 
+    .btn-promo {
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 15px;
+        transition: 0.5s;
+        line-height: 1;
+        color: #fff;
+        animation-delay: 0.8s;
+        background: lighten($orange, 0);
+
+        &:hover {
+            background: darken($orange, 5);
+        }
+    }
+
     @media (max-width: 992px) {
         height: 100vh;
 
@@ -167,13 +186,15 @@
             top: 66px;
         }
     }
-     @media (max-width: 768px) {
+
+    @media (max-width: 768px) {
         h2 {
             font-size: 40px;
         }
     }
+
     @media screen and (max-width: 600px) { /* Adjust max-width as needed */
-       
+
 
         .brand-text {
             display: block; /* Makes 'Yellowfin ' start on a new line */
